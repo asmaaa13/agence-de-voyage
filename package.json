@@ -1,0 +1,36 @@
+{
+  "name": "agence-de-voyage",
+  "version": "1.0.0",
+  "description": "A comprehensive travel agency web application",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "build": "webpack --mode production",
+    "docs": "jsdoc src/**/*.js -d docs/",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": ["travel", "agency", "booking", "vacation", "tourism"],
+  "author": "Travel Agency Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "eslint": "^8.47.0",
+    "jsdoc": "^4.0.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
